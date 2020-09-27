@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+*, 
+*::before, 
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Libre Franklin', sans-serif !important;
+	font-size: 20px !important;
+}
+
+.container {
+	text-align: center;
+	padding: 60px 200px;
+    width: 1000px;
+	margin: 0 auto;
+}
+
+.font-weight-light {
+	font-weight: 300;
+}
+
+.font-weight-semi-bold {
+	font-weight: 600;
+}
+
+.font-weight-bold {
+	font-weight: 700;
+}
+
+.text-grey {
+	color: hsl(0, 0%, 59%);
+}
+
+.text-blue {
+	color: hsl(209, 33%, 12%);
+}
+
+.text-white {
+	color: hsl(0, 100%, 100%);
+}
+
+.text-red  {
+	color: hsl(354, 100%, 66%);
+}
+
+.bg-blue {
+	background-color: hsl(223, 87%, 63%);
+}
+
+form {
+	display: flex;
+	flex-direction: row;
+	margin: 40px 0px 80px 80px;
+}
+
+form input {
+	border: 1px solid hsl(223, 100%, 88%);
+	border-radius: 50px;
+	text-indent: 20px;
+	outline: none;
+	font-size: 16px;
+	width: 300px;
+	padding: 12px 15px;
+}
+
+form input::placeholder {
+	color: hsl(223, 100%, 88%);
+}
+
+#error {
+	font-size: 12px;
+	font-style: italic;
+}
+
+.btn-container {
+	margin-left: 10px;
+}
+
+.button {
+	border-radius: 50px;
+	border: none;
+	cursor: pointer;
+	letter-spacing: 1px;
+	outline: none;
+	width: 150px;
+	padding: 15px 30px;
+	box-shadow: 2px 5px 25px hsl(223, 100%, 88%), 2px 2px 25px hsl(0, 100%, 100%);
+}
+
+.button:hover {
+	background-color: hsl(223, 87%, 68%);
+}
+
+main {
+	width: 100%;
+}
+
+.dashboard {
+	width: 100%;
+}
+
+footer {
+	font-size: 14px;
+	text-align: center;
+}
+
+@font-face {
+    font-family: 'IcoMoon-Free';
+    src: url('../IcoMoon-Free.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    /* !important to prevent issues with browser extensions that change fonts */
+    font-family: 'IcoMoon-Free' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 3;
+	color: hsl(223, 87%, 63%);
+	font-size: 20px;
+}
+
+.icon a {
+	text-decoration: none;
+	color: hsl(223, 87%, 63%);
+}
+
+.icon-facebook::before {
+	content: "\ea90";
+	border-radius: 50px;
+	border: 1px solid hsl(223, 100%, 88%);
+	padding: 8px;
+}
+
+.icon-twitter::before {
+	content: "\ea96";
+	border-radius: 50px;
+	border: 1px solid hsl(223, 100%, 88%);
+	padding: 8px;
+}
+
+.icon-instagram::before {
+	content: "\ea92";
+	border-radius: 50px;
+	border: 1px solid hsl(223, 100%, 88%);
+	padding: 8px;
+}
+
+.icon-facebook:hover::before {
+	background-color: hsl(223, 87%, 63%);
+	color: hsl(0, 100%, 100%);
+	border: none;
+}
+
+.icon-twitter:hover::before {
+	background-color: hsl(223, 87%, 63%);
+	color: hsl(0, 100%, 100%);
+	border: none;
+}
+
+.icon-instagram:hover::before {
+	background-color: hsl(223, 87%, 63%);
+	color: hsl(0, 100%, 100%);
+	border: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1284px){ /* TABLET DEVICES */
+	.container {
+		padding: 60px 0px;
+		width: 500px;
+	}
+	form {
+		margin-left: 20px;
+	}
+}
+
+@media (max-width: 600px){ /* MOBILE PHONES */
+	.container {
+		padding: 60px 30px;
+		width: 100%;
+	}
+	form {
+		flex-direction: column;
+		margin-left: 0px;
+	}
+	form input {
+		width: 100%;
+		padding: 10px;
+	}
+	.btn-container {
+		margin: 0;
+	}
+	.button {
+		width: 100%;
+		padding: 11px 30px;
+	}
+}
