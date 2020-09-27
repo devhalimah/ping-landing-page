@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- META TAGS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- EXTERNAL CSS FILE -->
+  <link rel="stylesheet" href="./css/index.css">
+  
+</head>
+<body>
+ <div class="container">
+  <header>
+    <img src="./images/logo.svg" alt="ping"/>
+  </header>
+
+  <section>
+  <h2 class="text-grey font-weight-light">We are launching <span class="text-blue font-weight-bold">soon!</span></h2>
+
+  <p class="text-blue font-weight-light">Subscribe and get notified</p>
+
+  <form name="form" onsubmit="return validate()">
+    <div>
+    <label for="email"></label>
+	<input type="text" name="email" value="" id="email" placeholder="Your email address..." class="text-blue"/>
+	<p class="text-red font-weight-light" id="error"></p>
+	</div>
+	
+	<div class="btn-container">
+        <button type="submit" class="button bg-blue text-white font-weight-semi-bold">Notify Me</button>
+	</div>
+  </form>
+  </section>
+  
+  <main>
+    <img src="./images/illustration-dashboard.png" alt="dashboard" class="dashboard">
+  </main>
+   </div> <!-- END OF CONTAINER -->
+
+  <footer>
+    <div class="icon">
+	    <a href="#"><span class="icon-facebook"></span></a>
+		<a href="#"><span class="icon-twitter"></span></a>
+		<a href="#"><span class="icon-instagram"></span></a>
+	</div>
+	
+	<p class="text-grey font-weight-light">&copy; Copyright Ping. All rights reserved.</p>
+  </footer>
+ 
+ <!-- EXTERNAL JAVASCRIPT FILE -->
+ <script src="./script/index.js"></script>
+</body>
+</html>
